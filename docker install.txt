@@ -1,0 +1,22 @@
+1. sudo su
+2. yum update -y
+3. yum install docker -y
+4. service docker start
+5. sudo usermod -a -G docker ec2-user
+6. systemctl enable docker
+7. service docker status
+8. docker info
+9. docker images
+10. docker pull ubuntu
+11. docker images
+12. docker run -it -d ubuntu
+13. docker ps
+14. docker ps -a
+15. docker exec -it <containerid> bash
+16. exit
+17. docker run hello-world
+18. docker pull alpine
+19. docker images
+20. docker run -t ubuntu
+21. docker images
+ 

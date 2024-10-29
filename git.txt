@@ -1,0 +1,36 @@
+# Navigate to the home directory
+cd
+
+# Check the installed Git version
+git --version
+
+# Access help for Git configuration
+git help config
+git config --help
+
+# Create a new directory named "Flame" and navigate into it
+mkdir YourDirectory
+cd YourDirectory
+
+#In windows go to c users folder and then open the created directory and inside that directory create an text file 
+ 
+# Initialize an empty Git repository in the "Flame" directory
+git init
+
+# Check the status of the repository
+git status
+
+# Add the file "FlameOmkar.txt" to the staging area
+git add Filename.txt
+
+# Commit the changes with a message
+git commit -m "Committing a Text file"
+
+# Set the global GitHub username
+git config --global user.username AccountName
+
+# Add a remote repository link
+git remote add origin link of repository.git
+
+# Push changes to the remote "master" branch on GitHub
+git push origin master

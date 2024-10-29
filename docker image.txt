@@ -1,0 +1,40 @@
+
+1. Login to AWS and launch an instance. 
+   - Connect to the instance via SSH or PuTTY.
+
+2. Switch to root and update the machine:
+   sudo su
+   yum update -y
+
+3. Install Docker and start the Docker service:
+   yum install -y docker
+   service docker start
+
+4. Create a directory and an HTML file for the application:
+   mkdir html-app
+   cd html-app
+
+5. Edit index.html using nano or vim:
+   nano index.html
+
+6. Create and configure the Dockerfile:
+   nano Dockerfile
+   code
+   FROM httpd
+   COPY ./ /usr/local/apache2/htdocs
+
+
+7. Build the Docker image:
+   docker build -t html-app .
+
+8. List Docker images:
+   docker images
+
+9. Run the Docker image as a container:
+   docker run -itd -p 80:80 --name html-app html-app
+
+10. List running Docker containers:
+   docker ps
+
+11. Access the application:
+   - Copy the public IP of your instance and paste it in a browser to view the running application.
